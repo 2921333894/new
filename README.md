@@ -29,37 +29,37 @@ https://i.postimg.cc/mZKt8FPM/image.png
 
 # 第二课
 ## 设备认证
-* 如何让网站的账户与设备绑定，后续完成代码的管理，上传下载
-   1. 创建本地仓库（后续对仓库的操作， 都要在仓库位置(master)）
+***如何让网站的账户与设备绑定，后续完成代码的管理，上传下载***
+1. 创建本地仓库（后续对仓库的操作， 都要在仓库位置(master)）
 ```bash
 	git init
 ```
-   2. 查看git的配置文件
+2. 查看git的配置文件
 ```bash
         git config --list
 ```
-   3. 绑定账号（SSH远程访问）
+3. 绑定账号（SSH远程访问）
 ```bash
 	git config --global user.email "邮箱"
 	git config --global user.name "用户名"
 ```
-   4. 创建本地密文
+4. 创建本地密文
 ```bash
 	ssh_keygen -t rsa -C "邮箱"
 ```
-   5. 去对应的目录查找密文文件
-   6. 在.pub文件中复制密文
-   7. 在settings-SSH key and GPG-new ssh key中粘贴
-   8. 测试关联是否成功
+5. 去对应的目录查找密文文件
+6. 在.pub文件中复制密文
+7. 在settings-SSH key and GPG-new ssh key中粘贴
+8. 测试关联是否成功
 ```bash
 	ssh -T@github.com
 ```
-* 为目标仓库起别名，定位目标仓库，后续上传
-   * 为ssh仓库地址创建别名为prigin
+***为目标仓库起别名，定位目标仓库，后续上传***
+* 为ssh仓库地址创建别名为prigin
 ```bash 
 	git remote add origin "ssh地址"
 ```
-   * 删除origin别名
+* 删除origin别名
 ```
 	git remote remove origin
 ```
