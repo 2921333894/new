@@ -29,7 +29,7 @@ https://i.postimg.cc/mZKt8FPM/image.png
 
 # 第二课
 ## 设备认证
-1. 如何让网站的账户与设备绑定，后续完成代码的管理，上传下载
+* 如何让网站的账户与设备绑定，后续完成代码的管理，上传下载
    1. 创建本地仓库（后续对仓库的操作， 都要在仓库位置(master)）
 ```bash
 	git init
@@ -54,27 +54,27 @@ https://i.postimg.cc/mZKt8FPM/image.png
 ```bash
 	ssh -T@github.com
 ```
-2. 为目标仓库起别名，定位目标仓库，后续上传
-* 为ssh仓库地址创建别名为prigin
+* 为目标仓库起别名，定位目标仓库，后续上传
+   * 为ssh仓库地址创建别名为prigin
 ```bash 
 	git remote add origin "ssh地址"
 ```
-* 删除origin别名
+   * 删除origin别名
 ```
 	git remote remove origin
 ```
 
 ## 本地设备与云端仓库的交互逻辑
 ![本地与云端的交互](https://i.postimg.cc/G3Z7xqdC/image.png"本地与云端的交互")
-添加内容
+* 添加内容
 ```bash
 	git add
 ```
-删除本地文件并删除仓库数据
+* 删除本地文件并删除仓库数据
 ```bash
 	git rm
 ```
-恢复被删除文件（仓库存在）
+* 恢复被删除文件（仓库存在）
 ```bash
 	git restroe
 ```
@@ -110,6 +110,7 @@ https://i.postimg.cc/mZKt8FPM/image.png
 ## Markdown 语言
 github可以编写readme，文本修饰语言
 
+# 第三课
 Markdown，文本修饰语言，用特殊符号修饰正文效果<br>
 
 ## 标题修饰符\#
